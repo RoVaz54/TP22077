@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="idhead">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oli's Quienes Somos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/fontawesome.css">
+</head>
+<body class="grid-container">
+
+    <header class="header" id="idheader"></header>
+
+    <nav class="navbar" id="idnavbar"></nav>
+
+    <aside class="sidebar" id="idsidebar"></aside>
+
+    <article class="main">
+        <h3>Consultas</h3>
+        </form>
+        <form name="val_form" class="val_form">
+
+            <label>Nombre</label>
+            <input type="text" name="nombre" placeholder="ingrese su nombre aqui...">
+
+            <label>Apellido</label>
+            <input type="text" name="apellido" placeholder="ingrese su apellido aqui...">
+
+            <label>Telefono</label>
+            <input type="tel" name="telefono" size="10" maxlength="10" placeholder="ingrese su telefono...">
+
+            <label>Mail</label>
+            <input type="email" name="mail" size="50" maxlength="100" placeholder="ingrese su mail aqui...">
+
+            <label>Fecha Nacimiento</label>
+            <input type="date" name="fecnac" size="10" maxlength="10" placeholder="dd/mm/yyyy">
+         
+            <label>Consulta</label>
+            <textarea name="comentarios" rows="3" placeholder="ingrese su mail aqui..."></textarea>
+
+            <input type="button" value="Enviar" onclick="valida_envia()">
+
+        </form>
+        
+
+    </article>
+
+    <footer class="footer" id="idfooter"></footer>
+    
+    <script src="js/template.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>
