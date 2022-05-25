@@ -47,19 +47,19 @@ cad = `
 
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="imgs/Torta1.jpg" style="width:100%">
+    <img src="imgs/Porc Lemon Pie.jpg" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="imgs/Torta2.jpg" style="width:100%">
+    <img src="imgs/Porc Mil Hojas.jpg" style="width:100%">
     <div class="text">Caption Two</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="imgs/Tarteleta1.jpg" style="width:100%">
+    <img src="imgs/Merienda.jpg" style="width:100%">
     <div class="text">Caption Three</div>
   </div>
   <br>
@@ -76,3 +76,27 @@ cad = `
 <p>olis.xxxxx.xxxx@xxx.xx</p>
 `
 document.getElementById("idfooter").innerHTML=cad;
+
+if ( document.getElementById( "productos" )) {
+  cad = `
+  <h2>Nuestros Productos</h2>
+  <div class="prodcont">
+  <div class="container">
+  `
+  for(var i=0; i<data.length; i++){
+    cad+=`
+       <div class="card" >
+        <img class="card-img-top" src="${data[i].imagen}" alt="Prod image" style="width:100%">
+        <div class="card-body">
+            <h4 class="card-title">${data[i].nombre}</h4> 
+            <a href="#" class="btn btn-primary">Ver Producto</a>
+        </div>
+      </div>
+    `
+  }
+  cad+=`  
+  </div>
+  </div>
+  `
+  document.getElementById("productos").innerHTML=cad;
+}
